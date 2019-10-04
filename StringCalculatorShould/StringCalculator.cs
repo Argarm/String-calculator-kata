@@ -10,8 +10,7 @@ namespace StringCalculatorShould
     {
         public int add(String name)
         {
-            if (name.Length > 0) return Int32.Parse(name);
-            return 0;
+            return name.Length> 0 ? Int32.Parse(name):0;
         
         }
     }

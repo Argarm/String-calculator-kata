@@ -14,9 +14,12 @@ namespace StringCalculatorShould
         }
 
         [TestMethod]
-        public void Return_Number_When_Input_Is_Number()
+        public void Return_Number_When_Input_Is_That_Number()
         {
             Assert.AreEqual(2, pruebas.add("2"));
         }
+
+       
+
     }
 }
