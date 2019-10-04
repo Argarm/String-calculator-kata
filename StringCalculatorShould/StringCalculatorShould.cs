@@ -12,5 +12,11 @@ namespace StringCalculatorShould
         {
             Assert.AreEqual(0, pruebas.add(""));
         }
+
+        [TestMethod]
+        public void Return_Number_When_Input_Is_Number()
+        {
+            Assert.AreEqual(2, pruebas.add("2"));
+        }
     }
 }
