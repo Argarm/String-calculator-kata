@@ -3,3 +3,8 @@ C:\Users\aargarcia\Desktop\Kata_calculador\ConsoleApplication1\StringCalculatorS
 C:\Users\aargarcia\Desktop\Kata_calculador\ConsoleApplication1\StringCalculatorShould\bin\Debug\StringCalculatorShould.pdb
 C:\Users\aargarcia\Desktop\Kata_calculador\ConsoleApplication1\StringCalculatorShould\obj\Debug\StringCalculatorShould.dll
 C:\Users\aargarcia\Desktop\Kata_calculador\ConsoleApplication1\StringCalculatorShould\obj\Debug\StringCalculatorShould.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\StringCalculatorShould.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\StringCalculatorShould.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.csprojResolveAssemblyReference.cache
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.pdb

@@ -10,7 +10,7 @@ namespace StringCalculatorShould
     {
         public int add(String name)
         {
-            return -1;
+            return 0;
         
         }
     }
