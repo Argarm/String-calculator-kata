@@ -67,6 +67,13 @@ namespace StringCalculatorShould
             Assert.AreEqual(3, pruebas.add("//;\n1;2"));
         }
 
+        [TestMethod]
+        public void return_exception_when_have_negative_numbers()
+        {
+            Assert.AreEqual(new Exception("Negative not allowed: -1"), pruebas.add("1,4,-1"));
+        }
+
+
 
     }
 }
