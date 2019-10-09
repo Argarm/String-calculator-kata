@@ -6,7 +6,12 @@ namespace StringCalculatorShould
     [TestClass]
     public class StringCalculatorShould
     {
-        StringCalculator pruebas = new StringCalculator();
+        StringCalculator pruebas;
+        [TestInitialize]
+        public void setUp() {
+            pruebas = new StringCalculator();
+        }
+
         [TestMethod]
         public void return_0_when_input_is_empty_string()
         {
@@ -77,22 +82,21 @@ namespace StringCalculatorShould
             }
             catch (Exception e)
             {
-                Assert.AreEqual(e.Message, "Negatives not allowed: -1");
+                Assert.AreEqual(e.Message, "Negatives not allowed: -3");
             }
         }
 
 
         [TestMethod]
-        
         public void throw_exception_when_have_negative_several_numbers()
         {
             try
             {
-                pruebas.add("-1,4,-3");
+                pruebas.add("-5,4,-3");
                 Assert.Fail();
             }
             catch (Exception e) {
-                Assert.AreEqual(e.Message, "Negatives not allowed: -1 -3");
+                Assert.AreEqual(e.Message, "Negatives not allowed: -5 -3");
             }
         }
 

@@ -11,7 +11,7 @@ namespace StringCalculatorShould
         private char delimiter = ',';
         public int add(String numbers)
         {
-
+            Console.Write(numbers);
             return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers)) : 0;
         
         }
@@ -37,15 +37,22 @@ namespace StringCalculatorShould
 
         private int Sum_Numbers(String numbers)
         {
+            
             int res = 0;
+            String negatives = "";
             foreach (String single in numbers.Split(delimiter))
             {
                 if (int.Parse(single) < 0)
                 {
-                    throw new ArgumentException("Negatives not allowed: -1");
+                    negatives+= " " + single;
+                    //Console.Write(single);
                 }
                 res += int.Parse(single);        
 
+            }
+            if (negatives.Length != 0)
+            {
+                throw new ArgumentException("Negatives not allowed:" + negatives);
             }
 
             return  res;
