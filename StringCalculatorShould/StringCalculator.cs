@@ -10,7 +10,7 @@ namespace StringCalculatorShould
     {
         public int add(String numbers)
         {
-            numbers = parseInput(numbers);
+            numbers = parseInput(numbers.Trim());
             return numbers.Length > 0 ? check_more_than_1_number(numbers) : 0;
         
         }
