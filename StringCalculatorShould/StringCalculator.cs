@@ -17,11 +17,14 @@ namespace StringCalculatorShould
 
         private String parseInput(String numbers) {
             if (numbers.Contains("//")) {
-                delimiter = numbers[2];
-                numbers = numbers.Substring(3);
-                return numbers.Replace('\n', delimiter).Trim();
+                numbers = delimiter_changer(numbers);
             }
             return numbers.Replace('\n', delimiter);
+        }
+
+        private String delimiter_changer(String numbers) {
+            delimiter = numbers[2];
+            return numbers.Substring(3).Trim();
         }
 
         private int check_more_than_1_number(String numbers)
