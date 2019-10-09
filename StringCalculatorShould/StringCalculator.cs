@@ -11,7 +11,6 @@ namespace StringCalculatorShould
         private char delimiter = ',';
         public int add(String numbers)
         {
-            Console.Write(numbers);
             return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers)) : 0;
         
         }
@@ -42,20 +41,17 @@ namespace StringCalculatorShould
             String negatives = "";
             foreach (String single in numbers.Split(delimiter))
             {
-                if (int.Parse(single) < 0)
-                {
-                    negatives+= " " + single;
-                    //Console.Write(single);
-                }
+                if (int.Parse(single) < 0)negatives+= " " + single;
+
                 res += int.Parse(single);        
 
             }
-            if (negatives.Length != 0)
-            {
-                throw new ArgumentException("Negatives not allowed:" + negatives);
-            }
-
+            check_negatives(negatives);
             return  res;
+        }
+        private void check_negatives(String negatives)
+        {
+            if (negatives.Length != 0) throw new ArgumentException("Negatives not allowed:" + negatives);
         }
 
     }
