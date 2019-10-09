@@ -28,7 +28,7 @@ namespace StringCalculatorShould
         [TestMethod]
         public void Return_Sum_When_Input_Are_2_numbers()
         {
-            Assert.AreEqual(3, pruebas.add("5,2"));
+            Assert.AreEqual(7, pruebas.add("5,2"));
         }
 
        

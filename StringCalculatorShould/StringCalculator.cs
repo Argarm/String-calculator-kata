@@ -10,9 +10,19 @@ namespace StringCalculatorShould
     {
         public int add(String name)
         {
-            if (name.Equals("1,2")) return 3;
-            return name.Length> 0 ? Int32.Parse(name):0;
+            return name.Length > 0 ? check_more_than_1_number(name):0;
         
+        }
+
+        public int check_more_than_1_number(String name)
+        {
+            if (name.Contains(','))
+            {
+                return (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]);
+            }
+            else { 
+                return Int32.Parse(name);
+            }
         }
     }
 }
