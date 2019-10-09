@@ -61,5 +61,12 @@ namespace StringCalculatorShould
             Assert.AreEqual(3, pruebas.add("//;1\n2"));
         }
 
+        [TestMethod]
+        public void return_3_when_input_have_different_delimiter_and_LF()
+        {
+            Assert.AreEqual(3, pruebas.add("//;\n1;2"));
+        }
+
+
     }
 }

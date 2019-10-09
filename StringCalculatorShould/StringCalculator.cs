@@ -19,12 +19,13 @@ namespace StringCalculatorShould
             if (numbers.Contains("//")) {
                 numbers = delimiter_changer(numbers);
             }
+            
             return numbers.Replace('\n', delimiter);
         }
 
         private String delimiter_changer(String numbers) {
             delimiter = numbers[2];
-            return numbers.Substring(3).Trim();
+            return numbers.Substring(3);
         }
 
         private int check_more_than_1_number(String numbers)
