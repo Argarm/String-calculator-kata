@@ -34,23 +34,22 @@ namespace StringCalculatorShould
             return numbers.Contains(delimiter) ? Sum_Numbers(numbers) : Int32.Parse(numbers); 
         }
 
+
         private int Sum_Numbers(String numbers)
         {
             int res = 0;
-
             foreach (String single in numbers.Split(delimiter))
             {
-
                 if (int.Parse(single) < 0)
                 {
-                    throw new ArgumentException("Negative not allowed: -1");
-                }else{
-                    res += int.Parse(single);        
-
+                    throw new ArgumentException("Negatives not allowed: -1");
                 }
+                res += int.Parse(single);        
+
             }
 
-            return res;
+            return  res;
         }
+
     }
 }

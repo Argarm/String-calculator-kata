@@ -68,12 +68,33 @@ namespace StringCalculatorShould
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException),"Negative not allowed: -1")]
         public void throw_exception_when_have_negative_numbers()
         {
-            pruebas.add("1,4,-1");
+            try
+            {
+                pruebas.add("1,4,-3");
+                Assert.Fail();
+            }
+            catch (Exception e)
+            {
+                Assert.AreEqual(e.Message, "Negatives not allowed: -1");
+            }
         }
 
+
+        [TestMethod]
+        
+        public void throw_exception_when_have_negative_several_numbers()
+        {
+            try
+            {
+                pruebas.add("-1,4,-3");
+                Assert.Fail();
+            }
+            catch (Exception e) {
+                Assert.AreEqual(e.Message, "Negatives not allowed: -1 -3");
+            }
+        }
 
 
     }

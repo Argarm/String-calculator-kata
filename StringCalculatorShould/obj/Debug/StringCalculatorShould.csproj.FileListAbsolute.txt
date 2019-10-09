@@ -8,3 +8,17 @@ C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debu
 C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.csprojResolveAssemblyReference.cache
 C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.dll
 C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\obj\Debug\StringCalculatorShould.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\FluentAssert.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\nunit.framework.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\FluentAssert.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\nunit.framework.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\nunit.framework.xml
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\nunit.engine.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\nunit.engine.api.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\FluentAssertions.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\System.ValueTuple.dll
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\FluentAssertions.pdb
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\FluentAssertions.xml
+C:\Users\aargarcia\Desktop\Kata_calculador\Kata1\StringCalculatorShould\bin\Debug\System.ValueTuple.xml
