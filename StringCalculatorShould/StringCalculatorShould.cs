@@ -41,7 +41,12 @@ namespace StringCalculatorShould
         {
             Assert.AreEqual(3, pruebas.add("1\n2"));
         }
-        
+
+        [TestMethod]
+        public void return_6_when_input_have_LF_and_commas()
+        {
+            Assert.AreEqual(6, pruebas.add("1\n2,3"));
+        }
 
     }
 }
