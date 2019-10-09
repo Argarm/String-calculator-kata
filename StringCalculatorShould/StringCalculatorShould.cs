@@ -50,7 +50,7 @@ namespace StringCalculatorShould
 
 
         [TestMethod]
-        public void return_6_when_input_have_at_the_beginningLF_and_commas()
+        public void return_6_when_input_have_at_the_beginning_LF_and_commas()
         {
             Assert.AreEqual(6, pruebas.add("\n1\n2,3"));
         }
@@ -58,7 +58,7 @@ namespace StringCalculatorShould
         [TestMethod]
         public void return_3_when_input_have_different_delimiter()
         {
-            Assert.AreEqual(3, pruebas.add("//;1\n2;3"));
+            Assert.AreEqual(3, pruebas.add("//;1\n2"));
         }
 
     }

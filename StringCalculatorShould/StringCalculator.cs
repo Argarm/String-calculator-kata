@@ -16,15 +16,20 @@ namespace StringCalculatorShould
         }
 
         private String parseInput(String numbers) {
+            if (numbers.Contains("//")) {
+                delimiter = numbers[2];
+                numbers = numbers.Substring(3);
+                return numbers.Replace('\n', delimiter).Trim();
+            }
             return numbers.Replace('\n', delimiter);
         }
 
-        public int check_more_than_1_number(String numbers)
+        private int check_more_than_1_number(String numbers)
         {
             return numbers.Contains(delimiter) ? Sum_Numbers(numbers) : Int32.Parse(numbers); 
         }
 
-        public int Sum_Numbers(String numbers)
+        private int Sum_Numbers(String numbers)
         {
             int res = 0;
 

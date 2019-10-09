@@ -10,6 +10,8 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            StringCalculator a = new StringCalculator();
+            a.add("//;1;2;3");
         }
     }
 }
