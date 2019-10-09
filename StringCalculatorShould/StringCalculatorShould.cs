@@ -100,6 +100,11 @@ namespace StringCalculatorShould
             }
         }
 
+        [TestMethod]
+        public void return_2_when_input_have_one_big_number()
+        {
+            Assert.AreEqual(2, pruebas.add("1000,2"));
+        }
 
     }
 }

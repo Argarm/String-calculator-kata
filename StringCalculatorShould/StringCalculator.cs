@@ -42,7 +42,6 @@ namespace StringCalculatorShould
             foreach (String single in numbers.Split(delimiter))
             {
                 if (int.Parse(single) < 0)negatives+= " " + single;
-
                 res += int.Parse(single);        
 
             }
@@ -51,7 +50,7 @@ namespace StringCalculatorShould
         }
         private void check_negatives(String negatives)
         {
-            if (negatives.Length != 0) throw new ArgumentException("Negatives not allowed:" + negatives);
+            if (!String.IsNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
         }
 
     }
