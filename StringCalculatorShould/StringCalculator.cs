@@ -10,8 +10,7 @@ namespace StringCalculatorShould
     {
         public int add(String numbers)
         {
-            if (numbers.Contains('\n')) return 3;
-            return numbers.Length > 0 ? check_more_than_1_number(numbers) : 0;
+            return (numbers.Contains('\n')) ? 3: numbers.Length > 0 ? check_more_than_1_number(numbers) : 0;
         
         }
 
