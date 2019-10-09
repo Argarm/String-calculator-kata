@@ -11,6 +11,7 @@ namespace StringCalculatorShould
         private char delimiter = ',';
         public int add(String numbers)
         {
+
             return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers)) : 0;
         
         }
@@ -39,7 +40,14 @@ namespace StringCalculatorShould
 
             foreach (String single in numbers.Split(delimiter))
             {
-                res += int.Parse(single);        
+
+                if (int.Parse(single) < 0)
+                {
+                    throw new ArgumentException("Negative not allowed: -1");
+                }else{
+                    res += int.Parse(single);        
+
+                }
             }
 
             return res;
