@@ -15,7 +15,7 @@ namespace StringCalculatorShould
         
         }
 
-        private String parseInput(String numbers) {
+        private String parseInput(String numbers) { 
             return numbers.Replace('\n', ',');
         }
 
