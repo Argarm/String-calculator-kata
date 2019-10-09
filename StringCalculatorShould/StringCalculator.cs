@@ -42,6 +42,7 @@ namespace StringCalculatorShould
             foreach (String single in numbers.Split(delimiter))
             {
                 if (int.Parse(single) < 0)negatives+= " " + single;
+                if (int.Parse(single) > 1000) continue;
                 res += int.Parse(single);        
 
             }
