@@ -31,7 +31,11 @@ namespace StringCalculatorShould
             Assert.AreEqual(7, pruebas.add("5,2"));
         }
 
-       
+        [TestMethod]
+        public void Return_6_When_Input_Are_1_2_3()
+        {
+            Assert.AreEqual(6, pruebas.add("1,2,3"));
+        }
 
     }
 }
