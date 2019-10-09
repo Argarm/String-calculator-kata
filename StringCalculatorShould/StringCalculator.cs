@@ -10,11 +10,14 @@ namespace StringCalculatorShould
     {
         public int add(String numbers)
         {
-            return numbers.Length > 0 ? check_more_than_1_number(numbers.Replace('\n', ',')) : 0;
+            numbers = parseInput(numbers);
+            return numbers.Length > 0 ? check_more_than_1_number(numbers) : 0;
         
         }
 
-        
+        private String parseInput(String numbers) {
+            return numbers.Replace('\n', ',');
+        }
 
         public int check_more_than_1_number(String numbers)
         {
