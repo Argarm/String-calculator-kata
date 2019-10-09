@@ -8,25 +8,27 @@ namespace StringCalculatorShould
 {
     class StringCalculator
     {
-        public int add(String name)
+        public int add(String numbers)
         {
-            return name.Length > 0 ? check_more_than_1_number(name):0;
+            return numbers.Length > 0 ? check_more_than_1_number(numbers) : 0;
         
         }
 
-        public int check_more_than_1_number(String name)
+        public int check_more_than_1_number(String numbers)
         {
-            return name.Contains(',') ? Sum_Numbers(name) : Int32.Parse(name); 
+            return numbers.Contains(',') ? Sum_Numbers(numbers) : Int32.Parse(numbers); 
         }
 
-        public int Sum_Numbers(String name) {
-            if (name.Length == 3) {
-                return (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]);
-            }
-            else
+        public int Sum_Numbers(String numbers)
+        {
+            int res = 0;
+
+            foreach (String single in numbers.Split(','))
             {
-                return (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]) + (int)Char.GetNumericValue(name[4]);
+                res += int.Parse(single);        
             }
+
+            return res;
         }
     }
 }
