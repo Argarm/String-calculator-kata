@@ -11,7 +11,7 @@ namespace StringCalculatorShould
         private char delimiter = ',';
         public int add(String numbers)
         {
-            return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers.Trim())) : 0;
+            return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers)) : 0;
         
         }
 
@@ -19,7 +19,7 @@ namespace StringCalculatorShould
             if (numbers.Contains("//")) {
                 numbers = delimiter_changer(numbers);
             }
-            
+            numbers = numbers.Trim();
             return numbers.Replace('\n', delimiter);
         }
 
