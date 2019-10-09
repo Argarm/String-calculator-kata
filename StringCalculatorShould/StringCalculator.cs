@@ -16,7 +16,17 @@ namespace StringCalculatorShould
 
         public int check_more_than_1_number(String name)
         {
-            return name.Contains(',') ? (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]) : Int32.Parse(name); 
+            return name.Contains(',') ? Sum_Numbers(name) : Int32.Parse(name); 
+        }
+
+        public int Sum_Numbers(String name) {
+            if (name.Length == 3) {
+                return (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]);
+            }
+            else
+            {
+                return (int)Char.GetNumericValue(name[0]) + (int)Char.GetNumericValue(name[2]) + (int)Char.GetNumericValue(name[4]);
+            }
         }
     }
 }
