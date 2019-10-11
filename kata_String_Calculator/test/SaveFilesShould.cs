@@ -24,13 +24,14 @@ namespace test
 
         [Test]
         public void check_ouput_expected() {
-            string numbers = "prueba de salida";
 
-            saveFile.Save(path,numbers);
+            string InTheFile = "prueba de salida";
+
+            saveFile.Save(path, InTheFile);
 
             StreamReader sr = new StreamReader(path);
-            string line = sr.ReadToEnd();
-            line.Should().Be(numbers);
+            string outputOfTheFile = sr.ReadToEnd();
+            outputOfTheFile.Should().Be(InTheFile);
         }
 
 
