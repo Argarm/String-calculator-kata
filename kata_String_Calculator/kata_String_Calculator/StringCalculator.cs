@@ -10,8 +10,9 @@ namespace kata_String_Calculator
         {
             if (String.IsNullOrEmpty(numbers)) return 0;
 
+            numbers = ParseInput(numbers);
 
-            return Check_more_than_1_number(ParseInput(numbers));
+            return Sum_Numbers(numbers);
 
         }
 
@@ -21,6 +22,7 @@ namespace kata_String_Calculator
             if (numbers.Contains("//"))
             {
                 numbers = numbers.Replace(numbers[2], ',');
+
                 numbers = numbers.Substring(3).Trim();
 
             }
@@ -28,15 +30,9 @@ namespace kata_String_Calculator
             return numbers.Replace('\n', ',');
         }
 
-        private int Check_more_than_1_number(String numbers)
-        {
-            return numbers.Contains(',') ? Sum_Numbers(numbers) : Int32.Parse(numbers);
-        }
-
-
         private int Sum_Numbers(String numbers)
         {
-
+            if(!numbers.Contains(',')) return Int32.Parse(numbers);
             int res = 0;
             String negatives = "";
             foreach (String single in numbers.Split(','))
@@ -50,6 +46,7 @@ namespace kata_String_Calculator
             Check_negatives(negatives);
             return res;
         }
+
         private void Check_negatives(String negatives)
         {
             if (!String.IsNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);

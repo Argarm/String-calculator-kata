@@ -9,7 +9,7 @@ namespace Save
     {
         public void Save(String path,String log)
         {
-            System.IO.File.AppendAllText(path, log);
+            System.IO.File.AppendAllText(path, log+"\n");
 
         }
 

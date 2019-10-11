@@ -4,6 +4,8 @@ using System.IO;
 using controlador;
 using Save;
 using kata_String_Calculator;
+using System;
+using System.Linq;
 
 namespace test
 {   
@@ -11,13 +13,12 @@ namespace test
     public class SaveActionShould
     {
         private SaveAction controlador;
-        private StreamReader sr;
+        //private StreamReader sr;
         private readonly string path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log_test.txt";
 
         [SetUp]
         public void SetUp()
         {
-            if (File.Exists(path)) File.Delete(path);
             controlador = new SaveAction(path,new SaveFile(),new StringCalculator());
         }
 
@@ -29,15 +30,21 @@ namespace test
 
             controlador.Execute(given);
 
-            sr = new StreamReader(path);
-            var linesInTheFile = sr.ReadToEnd();
+            
+            var linesInTheFile = File.ReadAllLines(path).Last();
             linesInTheFile.Should().Be(ouputThatShouldBeInTheFile);
 
         }
+        [Test]
+        public void check_if_trhows_an_exception_and_file_is_empty()
+        {
+            var given = "1,2,-3";
 
-        [TearDown]
-        public void TearDown() {
-            sr.Close();
+            Action a = () => controlador.Execute(given);
+            a.Should().Throw<ArgumentException>().WithMessage("Negatives not allowed: -3");
+
+            File.Exists(path).Should().BeTrue();
+
         }
 
     }
