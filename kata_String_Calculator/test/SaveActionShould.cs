@@ -19,6 +19,7 @@ namespace test
         [SetUp]
         public void SetUp()
         {
+            if (File.Exists(path)) File.Delete(path);
             controlador = new SaveAction(path,new SaveFile(),new StringCalculator());
         }
 
@@ -41,11 +42,15 @@ namespace test
             var given = "1,2,-3";
 
             Action a = () => controlador.Execute(given);
+            
+            
             a.Should().Throw<ArgumentException>().WithMessage("Negatives not allowed: -3");
-
-            File.Exists(path).Should().BeTrue();
+            File.Exists(path).Should().BeFalse();
 
         }
+
+
+        
 
     }
 }
