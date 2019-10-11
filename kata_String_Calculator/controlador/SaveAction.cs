@@ -11,11 +11,11 @@ namespace controlador
         private StringCalculator stringCalculator;
         private ISaveInterface saveFile;
         String path;
-        public SaveAction(String path)
+        public SaveAction(String path,ISaveInterface save, StringCalculator stringCalculator)
         {
             this.path = path;
-            stringCalculator = new StringCalculator();
-            saveFile = new SaveFile();
+            this.stringCalculator = stringCalculator;
+            saveFile = save;
 
         }
 

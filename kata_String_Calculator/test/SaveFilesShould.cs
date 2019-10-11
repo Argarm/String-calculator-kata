@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using NUnit.Framework;
-using Save;
 using FluentAssertions;
 using System.IO;
+using Save;
 
 namespace test
 {
@@ -12,10 +10,10 @@ namespace test
     public class SaveFilesShould
     {
         private ISaveInterface saveFile;
-
+        private StreamReader sr;
         String path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt";
         [SetUp]
-        public void setUp()
+        public void SetUp()
         {
             if (File.Exists(path)) File.Delete(path);
             saveFile = new SaveFile();
@@ -29,11 +27,16 @@ namespace test
 
             saveFile.Save(path, InTheFile);
 
-            StreamReader sr = new StreamReader(path);
+            sr = new StreamReader(path);
             string outputOfTheFile = sr.ReadToEnd();
             outputOfTheFile.Should().Be(InTheFile);
         }
 
+        [TearDown]
+        public void TearDown()
+        {
+            sr.Close();
+        }
 
 
     }

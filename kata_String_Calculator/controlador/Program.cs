@@ -7,7 +7,9 @@ namespace controlador
     {
         static void Main(string[] args)
         {
-            SaveAction a = new SaveAction(@"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt");
+            StringCalculator stringCalculator = new StringCalculator();
+            ISaveInterface saveFile = new SaveFile();
+            SaveAction a = new SaveAction(@"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt",saveFile,stringCalculator);
             a.Execute("1,2,-3");
 
         }
