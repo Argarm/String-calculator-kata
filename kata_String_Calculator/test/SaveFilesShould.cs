@@ -23,7 +23,7 @@ namespace test
         }
 
         [Test]
-        public void check_ouput_expected_general_case() {
+        public void check_ouput_expected() {
             string numbers = "prueba de salida";
 
             saveFile.Save(path,numbers);
