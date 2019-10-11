@@ -5,9 +5,9 @@ using System.IO;
 
 namespace Save
 {
-    public class SaveFile : SaveInterface
+    public class SaveFile : ISaveInterface
     {
-        public void save(String path,String log)
+        public void Save(String path,String log)
         {
             System.IO.File.AppendAllText(path, log);
 

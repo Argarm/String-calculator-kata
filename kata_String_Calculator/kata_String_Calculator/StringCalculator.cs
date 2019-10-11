@@ -6,36 +6,35 @@ namespace kata_String_Calculator
 {
     public class StringCalculator
     {
-        private char delimiter = ',';
-        public int add(String numbers)
+        public long Add(String numbers)
         {
-            return numbers.Length > 0 ? check_more_than_1_number(parseInput(numbers)) : 0;
+            if (String.IsNullOrEmpty(numbers)) return 0;
+            char delimiter = Delimiter_changer(numbers);
+            if (delimiter != ',') numbers = ParseInput(numbers.Substring(3), delimiter);
+            return Check_more_than_1_number(ParseInput(numbers,delimiter),delimiter);
 
         }
 
-        private String parseInput(String numbers)
+        private String ParseInput(String numbers,char delimiter)
         {
-            if (numbers.Contains("//"))
-            {
-                numbers = delimiter_changer(numbers);
-            }
+            
             numbers = numbers.Trim();
             return numbers.Replace('\n', delimiter);
         }
 
-        private String delimiter_changer(String numbers)
+        private char Delimiter_changer(String numbers)
         {
-            delimiter = numbers[2];
-            return numbers.Substring(3);
+            if (numbers.Contains("//"))return numbers[2];
+            return ',';
         }
 
-        private int check_more_than_1_number(String numbers)
+        private int Check_more_than_1_number(String numbers,char delimiter)
         {
-            return numbers.Contains(delimiter) ? Sum_Numbers(numbers) : Int32.Parse(numbers);
+            return numbers.Contains(delimiter) ? Sum_Numbers(numbers,delimiter) : Int32.Parse(numbers);
         }
 
 
-        private int Sum_Numbers(String numbers)
+        private int Sum_Numbers(String numbers,char delimiter)
         {
 
             int res = 0;
@@ -47,10 +46,11 @@ namespace kata_String_Calculator
                 res += int.Parse(single);
 
             }
-            check_negatives(negatives);
+
+            Check_negatives(negatives);
             return res;
         }
-        private void check_negatives(String negatives)
+        private void Check_negatives(String negatives)
         {
             if (!String.IsNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
         }

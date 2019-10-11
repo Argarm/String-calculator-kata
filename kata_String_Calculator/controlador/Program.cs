@@ -7,11 +7,8 @@ namespace controlador
     {
         static void Main(string[] args)
         {
-            StringCalculator prueba = new StringCalculator();
-            SaveInterface file = new SaveFile();
-            string log = "1,2,3";
-            log += "El resultado es: " + prueba.add("1,2,3") + "\n";
-            file.save(@"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator", log);
+            SaveAction a = new SaveAction(@"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt");
+            a.Execute("1,2,-3");
 
         }
     }

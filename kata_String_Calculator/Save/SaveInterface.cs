@@ -2,8 +2,8 @@
 
 namespace Save
 {
-    public interface SaveInterface
+    public interface ISaveInterface
     {
-        public void save(String path,String log);
+        public void Save(String path,String log);
     }
 }
