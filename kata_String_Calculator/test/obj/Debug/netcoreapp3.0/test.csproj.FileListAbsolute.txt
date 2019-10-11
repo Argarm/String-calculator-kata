@@ -1,7 +1,6 @@
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\obj\Debug\netcoreapp3.0\test.csprojAssemblyReference.cache
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\obj\Debug\netcoreapp3.0\test.AssemblyInfoInputs.cache
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\obj\Debug\netcoreapp3.0\test.AssemblyInfo.cs
-C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\kata_String_Calculator.exe
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\NUnit3.TestAdapter.pdb
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\test.deps.json
@@ -94,13 +93,12 @@ C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\obj\Debug\netcoreapp
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\obj\Debug\netcoreapp3.0\test.pdb
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\nunit.engine.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\nunit.engine.api.dll
-C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\Save.exe
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\Save.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\Save.pdb
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\FluentAssertions.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\System.Configuration.ConfigurationManager.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\controlador.exe
-C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\controlador.dll
-C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\controlador.pdb
+C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\monitor.exe
+C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\monitor.dll
+C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\test\bin\Debug\netcoreapp3.0\monitor.pdb

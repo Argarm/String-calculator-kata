@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <ApplicationIcon />
+
+    <OutputType>Library</OutputType>
+
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\controlador\controlador.csproj" />
+    <ProjectReference Include="..\controlador\monitor.csproj" />
     <ProjectReference Include="..\kata_String_Calculator\kata_String_Calculator.csproj" />
-    <ProjectReference Include="..\Save\Save.csproj" />
+    <ProjectReference Include="..\Save\save.csproj" />
   </ItemGroup>
 
 </Project>

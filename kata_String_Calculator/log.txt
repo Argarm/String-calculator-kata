@@ -1,1 +1,1 @@
-prueba de salida
+1,2,3 el resultado es: 6

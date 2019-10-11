@@ -11,7 +11,7 @@ namespace test
     {
         private ISaveInterface saveFile;
         private StreamReader sr;
-        String path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt";
+        private String path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log_test.txt";
         [SetUp]
         public void SetUp()
         {
@@ -23,12 +23,12 @@ namespace test
         [Test]
         public void check_ouput_expected() {
 
-            string InTheFile = "prueba de salida";
+            var InTheFile = "prueba de salida";
 
             saveFile.Save(path, InTheFile);
 
             sr = new StreamReader(path);
-            string outputOfTheFile = sr.ReadToEnd();
+            var outputOfTheFile = sr.ReadToEnd();
             outputOfTheFile.Should().Be(InTheFile);
         }
 

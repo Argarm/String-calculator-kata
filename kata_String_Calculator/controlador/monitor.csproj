@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\kata_String_Calculator\kata_String_Calculator.csproj" />
-    <ProjectReference Include="..\Save\Save.csproj" />
+    <ProjectReference Include="..\Save\save.csproj" />
   </ItemGroup>
 
 </Project>

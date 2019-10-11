@@ -11,10 +11,10 @@
           "FluentAssertions": "5.9.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "NUnit3TestAdapter": "3.15.1",
-          "Save": "1.0.0",
-          "controlador": "1.0.0",
           "kata_String_Calculator": "1.0.0",
-          "NUnit": "3.12.0"
+          "monitor": "1.0.0",
+          "NUnit": "3.12.0",
+          "save": "1.0.0"
         },
         "runtime": {
           "test.dll": {}
@@ -1050,23 +1050,23 @@
           }
         }
       },
-      "controlador/1.0.0": {
-        "dependencies": {
-          "Save": "1.0.0",
-          "kata_String_Calculator": "1.0.0"
-        },
-        "runtime": {
-          "controlador.dll": {}
-        }
-      },
       "kata_String_Calculator/1.0.0": {
         "runtime": {
           "kata_String_Calculator.dll": {}
         }
       },
-      "Save/1.0.0": {
+      "monitor/1.0.0": {
+        "dependencies": {
+          "kata_String_Calculator": "1.0.0",
+          "save": "1.0.0"
+        },
         "runtime": {
-          "Save.dll": {}
+          "monitor.dll": {}
+        }
+      },
+      "save/1.0.0": {
+        "runtime": {
+          "save.dll": {}
         }
       }
     }
@@ -1602,17 +1602,17 @@
       "path": "system.xml.xpath.xmldocument/4.3.0",
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
-    "controlador/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "kata_String_Calculator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Save/1.0.0": {
+    "monitor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "save/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

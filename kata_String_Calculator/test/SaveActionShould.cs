@@ -8,11 +8,11 @@ using kata_String_Calculator;
 namespace test
 {   
     [TestFixture]
-    public class ControladorShould
+    public class SaveActionShould
     {
         private SaveAction controlador;
         private StreamReader sr;
-        string path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log_test.txt";
+        private readonly string path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log_test.txt";
 
         [SetUp]
         public void SetUp()
@@ -25,13 +25,13 @@ namespace test
         [Test]
         public void check_if_action_and_save_in_file_works() {
             var given = "1,2,3";
-            var ouputInTheFile = given + " el resultado es: 6";
+            var ouputThatShouldBeInTheFile = given + " el resultado es: 6";
 
             controlador.Execute(given);
 
             sr = new StreamReader(path);
-            string outputOfTheFile = sr.ReadToEnd();
-            outputOfTheFile.Should().Be(ouputInTheFile);
+            var linesInTheFile = sr.ReadToEnd();
+            linesInTheFile.Should().Be(ouputThatShouldBeInTheFile);
 
         }
 

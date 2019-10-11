@@ -12,14 +12,14 @@
           "bin/placeholder/kata_String_Calculator.dll": {}
         }
       },
-      "Save/1.0.0": {
+      "save/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "compile": {
-          "bin/placeholder/Save.dll": {}
+          "bin/placeholder/save.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Save.dll": {}
+          "bin/placeholder/save.dll": {}
         }
       }
     }
@@ -30,16 +30,16 @@
       "path": "../kata_String_Calculator/kata_String_Calculator.csproj",
       "msbuildProject": "../kata_String_Calculator/kata_String_Calculator.csproj"
     },
-    "Save/1.0.0": {
+    "save/1.0.0": {
       "type": "project",
-      "path": "../Save/Save.csproj",
-      "msbuildProject": "../Save/Save.csproj"
+      "path": "../Save/save.csproj",
+      "msbuildProject": "../Save/save.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
-      "Save >= 1.0.0",
-      "kata_String_Calculator >= 1.0.0"
+      "kata_String_Calculator >= 1.0.0",
+      "save >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -49,9 +49,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\controlador\\controlador.csproj",
-      "projectName": "controlador",
-      "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\controlador\\controlador.csproj",
+      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\controlador\\monitor.csproj",
+      "projectName": "monitor",
+      "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\controlador\\monitor.csproj",
       "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\controlador\\obj\\",
       "projectStyle": "PackageReference",
@@ -75,8 +75,8 @@
             "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj": {
               "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj"
             },
-            "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\Save.csproj": {
-              "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\Save.csproj"
+            "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj": {
+              "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj"
             }
           }
         }

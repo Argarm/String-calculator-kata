@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kata_String_Calculator", "k
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{824666A6-3554-4814-ACAB-73680B8953BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Save", "Save\Save.csproj", "{D1DE9BFE-7E70-426E-B7A4-201128B62E5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "save", "Save\save.csproj", "{D1DE9BFE-7E70-426E-B7A4-201128B62E5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "controlador", "controlador\controlador.csproj", "{C5EAA92A-2195-4AEC-853B-0A927EE292D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "monitor", "controlador\monitor.csproj", "{C5EAA92A-2195-4AEC-853B-0A927EE292D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

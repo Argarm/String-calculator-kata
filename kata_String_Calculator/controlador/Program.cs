@@ -10,7 +10,7 @@ namespace controlador
             StringCalculator stringCalculator = new StringCalculator();
             ISaveInterface saveFile = new SaveFile();
             SaveAction a = new SaveAction(@"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log.txt",saveFile,stringCalculator);
-            a.Execute("1,2,-3");
+            a.Execute("1,2,3");
 
         }
     }
