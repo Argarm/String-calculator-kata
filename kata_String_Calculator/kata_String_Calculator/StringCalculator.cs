@@ -9,37 +9,37 @@ namespace kata_String_Calculator
         public long Add(String numbers)
         {
             if (String.IsNullOrEmpty(numbers)) return 0;
-            char delimiter = Delimiter_changer(numbers);
-            if (delimiter != ',') numbers = ParseInput(numbers.Substring(3), delimiter);
-            return Check_more_than_1_number(ParseInput(numbers,delimiter),delimiter);
+
+
+            return Check_more_than_1_number(ParseInput(numbers));
 
         }
 
-        private String ParseInput(String numbers,char delimiter)
+
+        private String ParseInput(String numbers)
         {
-            
+            if (numbers.Contains("//"))
+            {
+                numbers = numbers.Replace(numbers[2], ',');
+                numbers = numbers.Substring(3).Trim();
+
+            }
             numbers = numbers.Trim();
-            return numbers.Replace('\n', delimiter);
+            return numbers.Replace('\n', ',');
         }
 
-        private char Delimiter_changer(String numbers)
+        private int Check_more_than_1_number(String numbers)
         {
-            if (numbers.Contains("//"))return numbers[2];
-            return ',';
-        }
-
-        private int Check_more_than_1_number(String numbers,char delimiter)
-        {
-            return numbers.Contains(delimiter) ? Sum_Numbers(numbers,delimiter) : Int32.Parse(numbers);
+            return numbers.Contains(',') ? Sum_Numbers(numbers) : Int32.Parse(numbers);
         }
 
 
-        private int Sum_Numbers(String numbers,char delimiter)
+        private int Sum_Numbers(String numbers)
         {
 
             int res = 0;
             String negatives = "";
-            foreach (String single in numbers.Split(delimiter))
+            foreach (String single in numbers.Split(','))
             {
                 if (int.Parse(single) < 0) negatives += " " + single;
                 if (int.Parse(single) > 1000) continue;
