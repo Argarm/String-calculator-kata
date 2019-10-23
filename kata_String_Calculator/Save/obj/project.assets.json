@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\Save.csproj",
-      "projectName": "Save",
-      "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\Save.csproj",
+      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
+      "projectName": "save",
+      "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
       "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\obj\\",
+      "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

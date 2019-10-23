@@ -11,7 +11,16 @@ namespace test
     public class SaveFilesShould
     {
         private ISaveInterface saveFile;
-        private String path = @"C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\log_test.txt";
+        private String path = @giveMeTheGeneralDirectory();
+
+
+        private static string giveMeTheGeneralDirectory()
+        {
+            string workingDirectory = Environment.CurrentDirectory;
+            int indexOfDirectory = workingDirectory.IndexOf("test", 0, workingDirectory.Length);
+            string pathOfLogFolder = workingDirectory.Substring(0, indexOfDirectory - 1) + "\\Logs";
+            return pathOfLogFolder + "Log_test.txt";
+        }
         [SetUp]
         public void SetUp()
         {

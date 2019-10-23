@@ -12,7 +12,7 @@ namespace kata_String_Calculator
 
             numbers = ParseInput(numbers);
 
-            return Sum_Numbers(numbers);
+            return SumNumbers(numbers);
 
         }
 
@@ -30,7 +30,7 @@ namespace kata_String_Calculator
             return numbers.Replace('\n', ',');
         }
 
-        private int Sum_Numbers(String numbers)
+        private int SumNumbers(String numbers)
         {
             if(!numbers.Contains(',')) return Int32.Parse(numbers);
             int res = 0;
@@ -43,11 +43,11 @@ namespace kata_String_Calculator
 
             }
 
-            Check_negatives(negatives);
+            CheckNegatives(negatives);
             return res;
         }
 
-        private void Check_negatives(String negatives)
+        private void CheckNegatives(String negatives)
         {
             if (!String.IsNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
         }

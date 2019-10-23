@@ -6,3 +6,11 @@ C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\Save\bin\Debug\netcoreapp
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\Save\bin\Debug\netcoreapp3.0\Save.pdb
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\Save.dll
 C:\Users\aargarcia\Desktop\kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\Save.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\bin\Debug\netcoreapp3.0\save.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\bin\Debug\netcoreapp3.0\save.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\bin\Debug\netcoreapp3.0\save.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\save.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\save.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\save.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\save.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp3.0\save.pdb

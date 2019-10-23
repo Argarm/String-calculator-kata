@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj": {}
+    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj": {
+    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj",
+        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
         "projectName": "save",
-        "projectPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\save.csproj",
+        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
         "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aargarcia\\Desktop\\kata\\kata_String_Calculator\\Save\\obj\\",
+        "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
