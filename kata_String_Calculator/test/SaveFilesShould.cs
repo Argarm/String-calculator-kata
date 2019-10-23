@@ -31,7 +31,7 @@ namespace test
         [Test]
         public void check_ouput_expected() {
 
-            var InTheFile = "prueba de salida";
+            var InTheFile = "prueba de salida se guarda correctamente";
 
             saveFile.Save(path, InTheFile);
 
