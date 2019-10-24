@@ -6,7 +6,7 @@ namespace kata_String_Calculator
 {
     public class StringCalculator
     {
-        public long Add(String numbers)
+        public int Add(String numbers)
         {
             if (String.IsNullOrEmpty(numbers)) return 0;
 
