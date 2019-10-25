@@ -10,21 +10,34 @@ namespace controlador
     {
         private StringCalculator stringCalculator;
         private ISaveInterface saveFile;
-        String path;
-        public SaveAction(String path,ISaveInterface save, StringCalculator stringCalculator)
-        {
-            this.path = path;
-            this.stringCalculator = stringCalculator;
-            saveFile = save;
+        private String path = @"..\Logs\Log.txt";
 
+
+        public SaveAction(StringCalculator stringCalculator)
+        {
+            this.stringCalculator = stringCalculator;
+            saveFile = new SaveFile();
         }
 
-        public void Execute(String numbers) {
+        public StringCalculatorDTO Execute(String numbers) {
+
             String log = numbers + " el resultado es: ";
+            try
+            {
+                var resultadoAdd = stringCalculator.Add(numbers);
 
-            log+= stringCalculator.Add(numbers);
+                log += resultadoAdd;
 
-            saveFile.Save(path,log);
+                saveFile.Save(path, log);
+
+                return new StringCalculatorDTO{ Numbers = numbers, Resultado = resultadoAdd };
+
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+            
 
         }
     }

@@ -28,7 +28,7 @@ namespace test
         public void SetUp()
         {
             if (File.Exists(path)) File.Delete(path);
-            controlador = new SaveAction(path,new SaveFile(),new StringCalculator());
+            controlador = new SaveAction(new StringCalculator());
         }
 
 
