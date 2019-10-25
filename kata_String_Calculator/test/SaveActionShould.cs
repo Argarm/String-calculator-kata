@@ -20,8 +20,8 @@ namespace test
         {
             string workingDirectory = Environment.CurrentDirectory;
             int indexOfDirectory = workingDirectory.IndexOf("test", 0, workingDirectory.Length);
-            string pathOfLogFolder = workingDirectory.Substring(0, indexOfDirectory)+"Logs";
-            return pathOfLogFolder+"Log_test.txt";
+            string pathOfLogFolder = workingDirectory.Substring(0, indexOfDirectory)+"Logs_test";
+            return pathOfLogFolder;
         }
 
         [SetUp]

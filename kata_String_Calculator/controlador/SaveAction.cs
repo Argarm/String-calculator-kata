@@ -10,7 +10,7 @@ namespace controlador
     {
         private StringCalculator stringCalculator;
         private ISaveInterface saveFile;
-        private String path = @"..\Logs\Log.txt";
+        private String path = @"..\Log.txt";
 
 
         public SaveAction(StringCalculator stringCalculator)
