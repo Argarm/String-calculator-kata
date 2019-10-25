@@ -16,11 +16,10 @@ namespace StringCalculatorAPI.Model
         [HttpPost]
         public ActionResult<StringCalculatorDTO> PostStringCalculator(StringCalculatorModel modelo)
         {
-            var badRequestMessage = "{\"type\": \"Negatives not allowed\",\"title\": \"Bad Request\",\"status\": 400}";
             SaveAction action = new SaveAction(new StringCalculator());
             StringCalculatorDTO resultado = action.ExecuteAPI(modelo.Numbers);
 
-            if(resultado == null )return BadRequest(badRequestMessage);
+            if(resultado == null )return BadRequest(new BadRequestJSONegativesNotAllowed());
             return resultado;
         }
 
