@@ -13,14 +13,15 @@ namespace test
     public class SaveActionShould
     {
         private SaveAction controlador;
+        
+        private String path = @giveMeTheGeneralDirectory();
 
-        private readonly string path = @giveMeTheGeneralDirectory();
 
         private static string giveMeTheGeneralDirectory()
         {
             string workingDirectory = Environment.CurrentDirectory;
             int indexOfDirectory = workingDirectory.IndexOf("test", 0, workingDirectory.Length);
-            string pathOfLogFolder = workingDirectory.Substring(0, indexOfDirectory)+"Logs_test";
+            string pathOfLogFolder = workingDirectory.Substring(0, indexOfDirectory) + "Logs_test.txt";
             return pathOfLogFolder;
         }
 
@@ -37,7 +38,7 @@ namespace test
             var given = "1,2,3";
             var ouputThatShouldBeInTheFile = given + " el resultado es: 6";
 
-            controlador.Execute(given);
+            controlador.Execute(given,path);
 
             
             var linesInTheFile = File.ReadAllLines(path).Last();
@@ -49,7 +50,7 @@ namespace test
         {
             var given = "1,2,-3";
 
-            Action a = () => controlador.Execute(given);
+            Action a = () => controlador.Execute(given,path);
             
             
             a.Should().Throw<ArgumentException>().WithMessage("Negatives not allowed: -3");

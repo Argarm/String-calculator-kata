@@ -19,7 +19,7 @@ namespace controlador
             saveFile = new SaveFile();
         }
 
-        public StringCalculatorDTO Execute(String numbers) {
+        public StringCalculatorDTO ExecuteAPI(String numbers) {
 
             String log = numbers + " el resultado es: ";
             try
@@ -39,6 +39,17 @@ namespace controlador
             }
             
 
+        }
+
+        public void Execute(String numbers,String path)
+        {
+            this.path = path;
+            String log = numbers + " el resultado es: ";
+            var resultadoAdd = stringCalculator.Add(numbers);
+
+            log += resultadoAdd;
+
+            saveFile.Save(path, log);
         }
     }
 }
