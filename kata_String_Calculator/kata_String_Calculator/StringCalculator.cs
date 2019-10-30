@@ -6,39 +6,58 @@ namespace kata_String_Calculator
 {
     public class StringCalculator
     {
+        private int MAX_NUMBER = 1000;
+        private char NEW_LINE='\n';
+        private char DELIMITER = ',';
+        private static string NEW_DELIMITER_IDENTIFIER= "//";
+        private const int MIN_NUMBER = 0;
+
         public int Add(String numbers)
         {
-            if (String.IsNullOrEmpty(numbers)) return 0;
+            if (IsStringNullOrEmpty(numbers)) return 0;
 
-            numbers = ParseInput(numbers);
-
-            return SumNumbers(numbers);
+            return SumNumbers(NormilizeString(numbers));
 
         }
 
-
-        private String ParseInput(String numbers)
+        private static bool IsStringNullOrEmpty(string numbers)
         {
-            if (numbers.Contains("//"))
+            return String.IsNullOrEmpty(numbers);
+        }
+
+
+        private String NormilizeString(String numbers)
+        {
+            
+            if (IsNewDelimiterIdicator(numbers))
             {
-                numbers = numbers.Replace(numbers[2], ',');
+                numbers = numbers.Replace(numbers[2], DELIMITER);
 
                 numbers = numbers.Substring(3).Trim();
 
             }
             numbers = numbers.Trim();
-            return numbers.Replace('\n', ',');
+           
+            return numbers.Replace(NEW_LINE, DELIMITER);
+        }
+
+        private static bool IsNewDelimiterIdicator(string numbers)
+        {
+            
+            return numbers.Contains(NEW_DELIMITER_IDENTIFIER);
         }
 
         private int SumNumbers(String numbers)
         {
-            if(!numbers.Contains(',')) return Int32.Parse(numbers);
+            if(!numbers.Contains(DELIMITER)) return Int32.Parse(numbers);
             int res = 0;
             String negatives = "";
-            foreach (String single in numbers.Split(','))
+            foreach (String single in numbers.Split(DELIMITER))
             {
-                if (int.Parse(single) < 0) negatives += " " + single;
-                if (int.Parse(single) > 1000) continue;
+                
+                if (int.Parse(single) < MIN_NUMBER) negatives += " " + single;
+                
+                if (int.Parse(single) > MAX_NUMBER) continue;
                 res += int.Parse(single);
 
             }
@@ -49,7 +68,7 @@ namespace kata_String_Calculator
 
         private void CheckNegatives(String negatives)
         {
-            if (!String.IsNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
+            if (!IsStringNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
         }
 
     }
