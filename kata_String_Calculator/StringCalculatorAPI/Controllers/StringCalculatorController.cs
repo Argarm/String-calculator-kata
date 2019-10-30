@@ -1,8 +1,9 @@
-﻿using controlador;
+﻿using Microsoft.AspNetCore.Mvc;
 using Model;
-using Microsoft.AspNetCore.Mvc;
+using StringCalculatorAPI.Model;
+using UseCases;
 
-namespace StringCalculatorAPI.Model
+namespace StringCalculatorAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

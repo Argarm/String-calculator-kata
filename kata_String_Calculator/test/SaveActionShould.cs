@@ -1,10 +1,10 @@
 ﻿using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
-using controlador;
-using Model;
 using System;
 using System.Linq;
+using Model;
+using UseCases;
 
 namespace test
 {   

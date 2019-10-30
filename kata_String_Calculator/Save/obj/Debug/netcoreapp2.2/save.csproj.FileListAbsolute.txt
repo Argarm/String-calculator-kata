@@ -1,3 +1,0 @@
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp2.2\save.csprojAssemblyReference.cache
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp2.2\save.AssemblyInfoInputs.cache
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Save\obj\Debug\netcoreapp2.2\save.AssemblyInfo.cs

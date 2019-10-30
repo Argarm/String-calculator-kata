@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\controlador\UseCases.csproj" />
-    <ProjectReference Include="..\kata_String_Calculator\Model.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\UseCases\UseCases.csproj" />
   </ItemGroup>
 
 </Project>
