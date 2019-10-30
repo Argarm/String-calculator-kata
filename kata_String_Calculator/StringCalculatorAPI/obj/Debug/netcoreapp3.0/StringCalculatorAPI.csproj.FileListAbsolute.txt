@@ -107,10 +107,16 @@ C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringC
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.csprojAssemblyReference.cache
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\staticwebassets\StringCalculatorAPI.StaticWebAssets.Manifest.cache
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\staticwebassets\StringCalculatorAPI.StaticWebAssets.xml
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.AssemblyInfoInputs.cache
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.RazorTargetAssemblyInfo.cache
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.csproj.CopyComplete
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp3.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp3.0\StringCalculatorAPI.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,11 @@
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netcoreapp2.2\PersistanceFile.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netcoreapp2.2\PersistanceFile.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netcoreapp2.2\PersistanceFile.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netcoreapp2.2\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netcoreapp2.2\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.csproj.CopyComplete
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netcoreapp2.2\PersistanceFile.pdb

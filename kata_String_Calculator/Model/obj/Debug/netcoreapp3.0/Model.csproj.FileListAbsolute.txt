@@ -13,3 +13,4 @@ C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\o
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.csprojAssemblyReference.cache
