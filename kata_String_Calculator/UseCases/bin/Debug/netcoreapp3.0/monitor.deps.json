@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "monitor/1.0.0": {
+        "dependencies": {
+          "kata_String_Calculator": "1.0.0",
+          "save": "1.0.0"
+        },
+        "runtime": {
+          "monitor.dll": {}
+        }
+      },
+      "kata_String_Calculator/1.0.0": {
+        "runtime": {
+          "kata_String_Calculator.dll": {}
+        }
+      },
+      "save/1.0.0": {
+        "runtime": {
+          "save.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "monitor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "kata_String_Calculator/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "save/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

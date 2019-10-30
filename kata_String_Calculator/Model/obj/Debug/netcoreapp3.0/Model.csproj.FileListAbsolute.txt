@@ -1,0 +1,15 @@
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\bin\Debug\netcoreapp3.0\Model.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\bin\Debug\netcoreapp3.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\bin\Debug\netcoreapp3.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\obj\Debug\netcoreapp3.0\Model.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\obj\Debug\netcoreapp3.0\Model.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\obj\Debug\netcoreapp3.0\Model.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\obj\Debug\netcoreapp3.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\kata_String_Calculator\obj\Debug\netcoreapp3.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\bin\Debug\netcoreapp3.0\Model.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\bin\Debug\netcoreapp3.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\bin\Debug\netcoreapp3.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Model\obj\Debug\netcoreapp3.0\Model.pdb
