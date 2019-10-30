@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../kata_String_Calculator/Model.csproj",
+      "msbuildProject": "../kata_String_Calculator/Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\aargarcia\\.nuget\\packages\\": {},
@@ -14,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
-      "projectName": "save",
-      "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
+      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj",
+      "projectName": "PersistanceFile",
+      "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj",
       "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\obj\\",
       "projectStyle": "PackageReference",
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
+              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

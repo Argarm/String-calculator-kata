@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
+using Model;
 
-namespace Save
+namespace PersistanceFile
 {
-    public class SaveFile : ISaveInterface
+    public class SaveFile : ISave
     {
         public void Save(String path,String log)
         {

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj",
-      "projectName": "kata_String_Calculator",
-      "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj",
+      "projectName": "Model",
+      "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj",
       "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\obj\\",
       "projectStyle": "PackageReference",

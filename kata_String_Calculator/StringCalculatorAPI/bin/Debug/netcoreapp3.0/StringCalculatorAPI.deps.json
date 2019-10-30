@@ -28,8 +28,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.0.0",
-          "kata_String_Calculator": "1.0.0",
-          "monitor": "1.0.0",
+          "Model": "1.0.0",
+          "UseCases": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -2005,32 +2005,35 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "kata_String_Calculator/1.0.0": {
+      "Model/1.0.0": {
         "runtime": {
-          "kata_String_Calculator.dll": {}
+          "Model.dll": {}
         },
         "compile": {
-          "kata_String_Calculator.dll": {}
+          "Model.dll": {}
         }
       },
-      "monitor/1.0.0": {
+      "PersistanceFile/1.0.0": {
         "dependencies": {
-          "kata_String_Calculator": "1.0.0",
-          "save": "1.0.0"
+          "Model": "1.0.0"
         },
         "runtime": {
-          "monitor.dll": {}
+          "PersistanceFile.dll": {}
         },
         "compile": {
-          "monitor.dll": {}
+          "PersistanceFile.dll": {}
         }
       },
-      "save/1.0.0": {
+      "UseCases/1.0.0": {
+        "dependencies": {
+          "Model": "1.0.0",
+          "PersistanceFile": "1.0.0"
+        },
         "runtime": {
-          "save.dll": {}
+          "UseCases.dll": {}
         },
         "compile": {
-          "save.dll": {}
+          "UseCases.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -4797,17 +4800,17 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "kata_String_Calculator/1.0.0": {
+    "Model/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "monitor/1.0.0": {
+    "PersistanceFile/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "save/1.0.0": {
+    "UseCases/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

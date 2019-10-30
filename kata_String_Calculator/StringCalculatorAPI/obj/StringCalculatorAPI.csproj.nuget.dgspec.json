@@ -4,12 +4,12 @@
     "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\StringCalculatorAPI\\StringCalculatorAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj": {
+    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj",
-        "projectName": "monitor",
-        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj",
+        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj",
+        "projectName": "UseCases",
+        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj",
         "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\obj\\",
         "projectStyle": "PackageReference",
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj": {
-                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj"
+              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
+                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj"
               },
-              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj": {
-                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj"
+              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj": {
+                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj"
               }
             }
           }
@@ -66,12 +66,12 @@
         }
       }
     },
-    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj": {
+    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj",
-        "projectName": "kata_String_Calculator",
-        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj",
         "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\obj\\",
         "projectStyle": "PackageReference",
@@ -121,12 +121,12 @@
         }
       }
     },
-    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj": {
+    "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
-        "projectName": "save",
-        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj",
+        "projectUniqueName": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj",
+        "projectName": "PersistanceFile",
+        "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj",
         "packagesPath": "C:\\Users\\aargarcia\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\obj\\",
         "projectStyle": "PackageReference",
@@ -146,7 +146,11 @@
         },
         "frameworks": {
           "netcoreapp3.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
+                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -202,11 +206,11 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj": {
-                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj"
+              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj": {
+                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj"
               },
-              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj": {
-                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj"
+              "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
+                "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj"
               }
             }
           }

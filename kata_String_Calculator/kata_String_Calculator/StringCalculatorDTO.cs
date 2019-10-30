@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace kata_String_Calculator
+﻿namespace Model
 {
     public class StringCalculatorDTO
     {

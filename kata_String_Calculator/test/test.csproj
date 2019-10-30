@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\controlador\monitor.csproj" />
-    <ProjectReference Include="..\kata_String_Calculator\kata_String_Calculator.csproj" />
-    <ProjectReference Include="..\Save\save.csproj" />
+    <ProjectReference Include="..\controlador\UseCases.csproj" />
+    <ProjectReference Include="..\kata_String_Calculator\Model.csproj" />
+    <ProjectReference Include="..\Save\PersistanceFile.csproj" />
   </ItemGroup>
 
 </Project>

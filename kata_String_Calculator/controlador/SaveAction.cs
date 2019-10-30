@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using kata_String_Calculator;
-using Save;
+using Model;
+using PersistanceFile;
 
 namespace controlador
 {
     public class SaveAction
     {
         private StringCalculator stringCalculator;
-        private ISaveInterface saveFile;
+        private ISave saveFile;
         private String path = @"..\Log.txt";
 
 
@@ -33,7 +31,7 @@ namespace controlador
                 return new StringCalculatorDTO{ Numbers = numbers, Resultado = resultadoAdd };
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }

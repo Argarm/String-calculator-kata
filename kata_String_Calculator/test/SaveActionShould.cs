@@ -2,8 +2,7 @@
 using FluentAssertions;
 using System.IO;
 using controlador;
-using Save;
-using kata_String_Calculator;
+using Model;
 using System;
 using System.Linq;
 

@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using controlador;
-using kata_String_Calculator;
-using Microsoft.AspNetCore.Http;
+﻿using controlador;
+using Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace StringCalculatorAPI.Model

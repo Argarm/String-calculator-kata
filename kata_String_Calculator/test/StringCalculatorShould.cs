@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using kata_String_Calculator;
+using Model;
 using System;
 using FluentAssertions;
 

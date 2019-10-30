@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
-namespace kata_String_Calculator
+namespace Model
 {
     public class StringCalculator
     {
@@ -14,62 +13,73 @@ namespace kata_String_Calculator
 
         public int Add(String numbers)
         {
-            if (IsStringNullOrEmpty(numbers)) return 0;
+            if (IsEmpty(numbers)) return 0;
 
-            return SumNumbers(NormilizeString(numbers));
+            return Sum(GiveMeNumbers(numbers));
 
         }
 
-        private static bool IsStringNullOrEmpty(string numbers)
+        private int[] GiveMeNumbers(string numbers)
+        {
+            var separatedString = Separate(NormilizeString(numbers));
+            return ExtractNumbers(separatedString);
+        }
+
+        private string[] Separate(string numbers)
+        {
+            return numbers.Split(DELIMITER);
+        }
+
+        private string NormilizeString(String numbers)
+        {
+            numbers = numbers.Trim();
+
+            if (IsNewDelimiterIndicator(numbers))
+            {
+                numbers = numbers.Replace(numbers[2], DELIMITER);
+
+                numbers = numbers.Substring(3).Trim();
+            }
+            return numbers.Replace(NEW_LINE, DELIMITER);
+        }
+
+        private bool IsEmpty(string numbers)
         {
             return String.IsNullOrEmpty(numbers);
         }
 
 
-        private String NormilizeString(String numbers)
+        private int[] ExtractNumbers(string[] numbers)
         {
-            
-            if (IsNewDelimiterIdicator(numbers))
-            {
-                numbers = numbers.Replace(numbers[2], DELIMITER);
-
-                numbers = numbers.Substring(3).Trim();
-
-            }
-            numbers = numbers.Trim();
-           
-            return numbers.Replace(NEW_LINE, DELIMITER);
+            return numbers.Select(int.Parse).ToArray();
         }
 
-        private static bool IsNewDelimiterIdicator(string numbers)
+        
+
+        private static bool IsNewDelimiterIndicator(string numbers)
         {
             
             return numbers.Contains(NEW_DELIMITER_IDENTIFIER);
         }
 
-        private int SumNumbers(String numbers)
+        private int Sum(int[] numbers)
         {
-            if(!numbers.Contains(DELIMITER)) return Int32.Parse(numbers);
-            int res = 0;
-            String negatives = "";
-            foreach (String single in numbers.Split(DELIMITER))
-            {
-                
-                if (int.Parse(single) < MIN_NUMBER) negatives += " " + single;
-                
-                if (int.Parse(single) > MAX_NUMBER) continue;
-                res += int.Parse(single);
+            var negatives = numbers.Where(IsNegative).ToList();
+            if (negatives.Any()) throw new ArgumentException("Negatives not allowed: " + String.Join(" ",negatives));
+            return numbers.Where(IsLessThanMaximum).Sum();
 
-            }
-
-            CheckNegatives(negatives);
-            return res;
         }
 
-        private void CheckNegatives(String negatives)
+        private bool IsLessThanMaximum(int number)
         {
-            if (!IsStringNullOrEmpty(negatives)) throw new ArgumentException("Negatives not allowed:" + negatives);
+            return number < MAX_NUMBER;
         }
 
+        private bool IsNegative(int number)
+        {
+            return number < MIN_NUMBER;
+        }
+
+        
     }
 }

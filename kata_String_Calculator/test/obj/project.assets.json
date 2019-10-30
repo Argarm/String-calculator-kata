@@ -1478,38 +1478,41 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "kata_String_Calculator/1.0.0": {
+      "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "compile": {
-          "bin/placeholder/kata_String_Calculator.dll": {}
+          "bin/placeholder/Model.dll": {}
         },
         "runtime": {
-          "bin/placeholder/kata_String_Calculator.dll": {}
+          "bin/placeholder/Model.dll": {}
         }
       },
-      "monitor/1.0.0": {
+      "PersistanceFile/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "kata_String_Calculator": "1.0.0",
-          "save": "1.0.0"
+          "Model": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/monitor.dll": {}
+          "bin/placeholder/PersistanceFile.dll": {}
         },
         "runtime": {
-          "bin/placeholder/monitor.dll": {}
+          "bin/placeholder/PersistanceFile.dll": {}
         }
       },
-      "save/1.0.0": {
+      "UseCases/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Model": "1.0.0",
+          "PersistanceFile": "1.0.0"
+        },
         "compile": {
-          "bin/placeholder/save.dll": {}
+          "bin/placeholder/UseCases.dll": {}
         },
         "runtime": {
-          "bin/placeholder/save.dll": {}
+          "bin/placeholder/UseCases.dll": {}
         }
       }
     }
@@ -5365,31 +5368,31 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "kata_String_Calculator/1.0.0": {
+    "Model/1.0.0": {
       "type": "project",
-      "path": "../kata_String_Calculator/kata_String_Calculator.csproj",
-      "msbuildProject": "../kata_String_Calculator/kata_String_Calculator.csproj"
+      "path": "../kata_String_Calculator/Model.csproj",
+      "msbuildProject": "../kata_String_Calculator/Model.csproj"
     },
-    "monitor/1.0.0": {
+    "PersistanceFile/1.0.0": {
       "type": "project",
-      "path": "../controlador/monitor.csproj",
-      "msbuildProject": "../controlador/monitor.csproj"
+      "path": "../Save/PersistanceFile.csproj",
+      "msbuildProject": "../Save/PersistanceFile.csproj"
     },
-    "save/1.0.0": {
+    "UseCases/1.0.0": {
       "type": "project",
-      "path": "../Save/save.csproj",
-      "msbuildProject": "../Save/save.csproj"
+      "path": "../controlador/UseCases.csproj",
+      "msbuildProject": "../controlador/UseCases.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "FluentAssertions >= 5.9.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "Model >= 1.0.0",
       "NUnit3TestAdapter >= 3.15.1",
-      "kata_String_Calculator >= 1.0.0",
-      "monitor >= 1.0.0",
-      "nunit >= 3.12.0",
-      "save >= 1.0.0"
+      "PersistanceFile >= 1.0.0",
+      "UseCases >= 1.0.0",
+      "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
@@ -5422,14 +5425,14 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj": {
-              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\monitor.csproj"
+            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj": {
+              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\controlador\\UseCases.csproj"
             },
-            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj": {
-              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\kata_String_Calculator.csproj"
+            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj": {
+              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\kata_String_Calculator\\Model.csproj"
             },
-            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj": {
-              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\save.csproj"
+            "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj": {
+              "projectPath": "C:\\Users\\aargarcia\\Desktop\\String-calculator-kata\\kata_String_Calculator\\Save\\PersistanceFile.csproj"
             }
           }
         }

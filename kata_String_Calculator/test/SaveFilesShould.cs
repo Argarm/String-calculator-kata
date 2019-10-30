@@ -2,15 +2,16 @@
 using NUnit.Framework;
 using FluentAssertions;
 using System.IO;
-using Save;
 using System.Linq;
+using Model;
+using PersistanceFile;
 
 namespace test
 {
     [TestFixture]
     public class SaveFilesShould
     {
-        private ISaveInterface saveFile;
+        private ISave saveFile;
         private String path = @giveMeTheGeneralDirectory();
 
 

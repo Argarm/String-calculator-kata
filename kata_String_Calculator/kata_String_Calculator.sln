@@ -3,15 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kata_String_Calculator", "kata_String_Calculator\kata_String_Calculator.csproj", "{5B27E6E7-5894-40E8-B965-97E1BBF61C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "kata_String_Calculator\Model.csproj", "{5B27E6E7-5894-40E8-B965-97E1BBF61C8C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "test", "test\test.csproj", "{824666A6-3554-4814-ACAB-73680B8953BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "save", "Save\save.csproj", "{D1DE9BFE-7E70-426E-B7A4-201128B62E5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersistanceFile", "Save\PersistanceFile.csproj", "{D1DE9BFE-7E70-426E-B7A4-201128B62E5A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5B27E6E7-5894-40E8-B965-97E1BBF61C8C} = {5B27E6E7-5894-40E8-B965-97E1BBF61C8C}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "monitor", "controlador\monitor.csproj", "{C5EAA92A-2195-4AEC-853B-0A927EE292D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases", "controlador\UseCases.csproj", "{C5EAA92A-2195-4AEC-853B-0A927EE292D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringCalculatorAPI", "StringCalculatorAPI\StringCalculatorAPI.csproj", "{07C30650-5D1C-4C77-A178-0C3F927314B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringCalculatorAPI", "StringCalculatorAPI\StringCalculatorAPI.csproj", "{07C30650-5D1C-4C77-A178-0C3F927314B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
