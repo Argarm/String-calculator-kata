@@ -3,3 +3,6 @@
 2,5,1 el resultado es: 8
 2,5,1 el resultado es: 8
 2,5,1 el resultado es: 8
+1,2,3 el resultado es: 6
+1,2,3 el resultado es: 6
+1,2,3 el resultado es: 6

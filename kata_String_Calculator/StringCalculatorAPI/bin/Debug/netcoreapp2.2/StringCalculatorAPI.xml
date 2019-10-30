@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StringCalculatorAPI</name>
+    </assembly>
+    <members>
+        <member name="M:StringCalculatorAPI.Controllers.StringCalculatorController.PostStringCalculator(StringCalculatorAPI.Model.StringCalculatorModel)">
+            <summary>
+            Suma los numeros de una string pasada.
+            </summary>
+            <param Numbers="1,2,3">ID of the anomaly to return</param>
+        </member>
+    </members>
+</doc>

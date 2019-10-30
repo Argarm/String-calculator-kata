@@ -18,3 +18,5 @@ C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringC
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp2.2\StringCalculatorAPI.csproj.CopyComplete
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp2.2\StringCalculatorAPI.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp2.2\StringCalculatorAPI.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\bin\Debug\netcoreapp2.2\StringCalculatorAPI.xml
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\StringCalculatorAPI\obj\Debug\netcoreapp2.2\StringCalculatorAPI.xml
