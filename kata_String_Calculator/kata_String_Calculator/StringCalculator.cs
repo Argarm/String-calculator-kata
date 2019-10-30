@@ -35,6 +35,7 @@ namespace kata_String_Calculator
 
                 numbers = numbers.Substring(3).Trim();
 
+
             }
             numbers = numbers.Trim();
            
