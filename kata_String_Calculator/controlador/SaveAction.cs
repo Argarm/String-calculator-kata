@@ -28,7 +28,7 @@ namespace controlador
 
                 saveFile.Save(path, log);
 
-                return new StringCalculatorDTO{ Numbers = numbers, Resultado = resultadoAdd };
+                return new StringCalculatorDTO{ Numbers = numbers, Result = resultadoAdd };
 
             }
             catch (Exception)
