@@ -1,5 +1,3 @@
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.AssemblyInfoInputs.cache
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netcoreapp2.2\UseCases.deps.json
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netcoreapp2.2\UseCases.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netcoreapp2.2\UseCases.pdb
@@ -8,6 +6,8 @@ C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCase
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netcoreapp2.2\Model.pdb
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netcoreapp2.2\PersistanceFile.pdb
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.csproj.CopyComplete
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netcoreapp2.2\UseCases.pdb

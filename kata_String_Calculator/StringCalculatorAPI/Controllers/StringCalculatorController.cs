@@ -18,9 +18,17 @@ namespace StringCalculatorAPI.Controllers
         /// <summary>
         /// Suma los numeros de una string pasada.
         /// </summary>
-        /// <param Numbers="1,2,3">ID of the anomaly to return</param>
+        /// <remarks>
+        /// Sample of usage:
+        ///
+        ///     POST /api/StringCalculator
+        ///     {
+        ///        "Numbers": "1,2,3"
+        ///     }
+        ///
+        /// </remarks>
         [HttpPost]
-        public ActionResult<StringCalculatorDTO> PostStringCalculator(StringCalculatorModel modelo)
+        public ActionResult<StringCalculatorDTO> PostStringCalculator(StringCalculatorRequest modelo)
         {
             SaveAction action = new SaveAction(new StringCalculator());
             StringCalculatorDTO resultado = action.ExecuteAPI(modelo.Numbers);

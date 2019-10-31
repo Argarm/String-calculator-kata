@@ -1,6 +1,10 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Reflection;
+using Microsoft.ApplicationInsights.DependencyCollector;
+using Microsoft.ApplicationInsights.Extensibility;
+using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +27,8 @@ namespace StringCalculatorAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddApplicationInsightsTelemetry();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSwaggerGen(c =>
@@ -53,8 +59,14 @@ namespace StringCalculatorAPI
                 }
             });
 
+            var performanceCounterService = services.FirstOrDefault<ServiceDescriptor>(t => t.ImplementationType == typeof(DependencyTrackingTelemetryModule));
+            if (performanceCounterService != null)
+            {
+                services.Remove(performanceCounterService);
+            }
 
-            
+
+
 
         }
 
@@ -70,6 +82,7 @@ namespace StringCalculatorAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             app.UseSwagger();
             app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "String Calculator V1"); c.RoutePrefix=String.Empty;});
             

@@ -1,6 +1,3 @@
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.csprojAssemblyReference.cache
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.AssemblyInfoInputs.cache
-C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\NUnit3.TestAdapter.pdb
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\nunit.engine.dll
@@ -16,6 +13,9 @@ C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bi
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\Model.pdb
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\PersistanceFile.pdb
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\bin\Debug\netcoreapp2.2\UseCases.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.AssemblyInfo.cs
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.csproj.CopyComplete
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.dll
 C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\test\obj\Debug\netcoreapp2.2\test.pdb

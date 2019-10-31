@@ -1,6 +1,6 @@
 ﻿namespace StringCalculatorAPI.Model
 {
-    public class StringCalculatorModel
+    public class StringCalculatorRequest
     {
         public string Numbers { get; set; }
     }
