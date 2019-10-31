@@ -2238,7 +2238,7 @@
       },
       "Model/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
           "Swashbuckle.AspNetCore.SwaggerGen": "4.0.1",
@@ -2253,7 +2253,7 @@
       },
       "PersistanceFile/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Model": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
@@ -2269,7 +2269,7 @@
       },
       "UseCases/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Model": "1.0.0",
           "PersistanceFile": "1.0.0",

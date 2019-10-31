@@ -1,10 +1,6 @@
 using System;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using Microsoft.ApplicationInsights.DependencyCollector;
-using Microsoft.ApplicationInsights.Extensibility;
-using Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -58,15 +54,6 @@ namespace StringCalculatorAPI
                     c.IncludeXmlComments(xmlPath);
                 }
             });
-
-            var performanceCounterService = services.FirstOrDefault<ServiceDescriptor>(t => t.ImplementationType == typeof(DependencyTrackingTelemetryModule));
-            if (performanceCounterService != null)
-            {
-                services.Remove(performanceCounterService);
-            }
-
-
-
 
         }
 

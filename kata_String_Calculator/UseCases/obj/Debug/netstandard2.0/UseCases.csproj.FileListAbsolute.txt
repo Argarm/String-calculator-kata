@@ -1,0 +1,13 @@
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\UseCases.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\UseCases.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\UseCases.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\PersistanceFile.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\bin\Debug\netstandard2.0\PersistanceFile.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.csproj.CopyComplete
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\UseCases\obj\Debug\netstandard2.0\UseCases.pdb

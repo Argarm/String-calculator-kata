@@ -1,0 +1,11 @@
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netstandard2.0\PersistanceFile.deps.json
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netstandard2.0\PersistanceFile.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netstandard2.0\PersistanceFile.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netstandard2.0\Model.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\bin\Debug\netstandard2.0\Model.pdb
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.csprojAssemblyReference.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.AssemblyInfoInputs.cache
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.AssemblyInfo.cs
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.csproj.CopyComplete
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.dll
+C:\Users\aargarcia\Desktop\String-calculator-kata\kata_String_Calculator\Persistance\obj\Debug\netstandard2.0\PersistanceFile.pdb
