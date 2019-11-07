@@ -9,7 +9,6 @@ namespace StringCalculatorAPI.Controllers
     [Produces("application/json")]
     [ApiVersion("1.0")]
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     [ProducesResponseType(typeof(StringCalculatorDTO), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(BadRequestJSONegativesNotAllowed), (int)HttpStatusCode.BadRequest)]    
@@ -17,6 +16,8 @@ namespace StringCalculatorAPI.Controllers
     public class StringCalculatorController : Controller
     {
         [MapToApiVersion("1.0")]
+        [MapToApiVersion("2.0")]
+        [Route("api/v{version:apiVersion}")]
         [HttpPost]
         public ActionResult<StringCalculatorDTO> PostStringCalculator(StringCalculatorRequest modelo)
         {
@@ -29,7 +30,7 @@ namespace StringCalculatorAPI.Controllers
 
 
         [MapToApiVersion("2.0")]
-        
+        [Route("api/v{version:apiVersion}/[controller]")]
         [HttpPost]
         public ActionResult<StringCalculatorDTOV2> PostStringCalculatorv2(StringCalculatorRequestV2 modelo)
         {
