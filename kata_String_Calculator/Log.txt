@@ -6,3 +6,11 @@
 1,2,3 el resultado es: 6
 1,2,3 el resultado es: 6
  el resultado es: 0
+1,2,3 el resultado es: 6
+1 el resultado es: 1
+1,2 el resultado es: 3
+1,2,3 el resultado es: 6
+1,2 el resultado es: 3
+1,2 el resultado es: 3
+1,2,3 el resultado es: 6
+4,5,6 el resultado es: 15

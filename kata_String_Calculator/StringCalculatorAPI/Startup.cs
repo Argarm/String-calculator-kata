@@ -4,12 +4,15 @@ using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -17,6 +20,7 @@ using Microsoft.Extensions.PlatformAbstractions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Swashbuckle.AspNetCore.Swagger;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 
 namespace StringCalculatorAPI
@@ -36,24 +40,33 @@ namespace StringCalculatorAPI
         {
             
             services.AddHealthChecks().AddCheck<HealthCheck>("Health_Check_Example");
-            services.AddApplicationInsightsTelemetry(Configuration["ApplicationInsights:InstrumentationKey"]);
-            services.AddApiVersioning(options =>
+            services.AddHealthChecksUI(setupSettings: setup =>
             {
-                options.ReportApiVersions = true;
-                options.AssumeDefaultVersionWhenUnspecified = true;
-                options.DefaultApiVersion = new ApiVersion(1, 0);
+                setup.AddHealthCheckEndpoint("Basic healthcheck", "https://localhost:5001/health");
             });
+
+            services.AddVersionedApiExplorer(
+                options =>
+                {
+                    options.GroupNameFormat = "'v'VVV";
+                    options.SubstituteApiVersionInUrl = true;
+                });
+            services.AddApiVersioning(o => o.ReportApiVersions = true);
+
+            services.AddApplicationInsightsTelemetry(Configuration["ApplicationInsights:InstrumentationKey"]);
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddSwaggerGen(c =>
             {
+                
                 c.ResolveConflictingActions(apiDescription => apiDescription.First());
                 c.SwaggerDoc("v1", new Info
                 {
                     Version = "v1.0",
                     Title = "String Calculator API",
                     Description = "API que suma una serie de numeros pasados",
-                    TermsOfService = "#TengoSueño",
+                    TermsOfService = "#Version 1.0",
                     License = new License
                     {
                         Name = "MIT",
@@ -66,7 +79,25 @@ namespace StringCalculatorAPI
                         Url = "github.com/Argarm"
                     }
                 });
-                
+                c.SwaggerDoc("v2", new Info
+                {
+                    Version = "v2.0",
+                    Title = "String Calculator API",
+                    Description = "API que suma una serie de numeros pasados",
+                    TermsOfService = "#Version 2.0",
+                    License = new License
+                    {
+                        Name = "MIT",
+                        Url = "https://es.wikipedia.org/wiki/Licencia_MIT"
+                    },
+                    Contact = new Contact
+                    {
+                        Name = "Aarón García",
+                        Email = "aargarcia@domingoalonsogroup.com",
+                        Url = "github.com/Argarm"
+                    }
+                });
+
                 var basePath = PlatformServices.Default.Application.ApplicationBasePath;
                 var xmlPath = Path.Combine(basePath, Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)) + ".xml";
                 if (File.Exists(xmlPath))
@@ -75,34 +106,6 @@ namespace StringCalculatorAPI
                 }
             });
 
-            services.AddSwaggerGen(c =>
-            {
-                c.ResolveConflictingActions(apiDescription => apiDescription.First());
-                c.SwaggerDoc("v2", new Info
-                {
-                    Version = "v2.0",
-                    Title = "String Calculator API",
-                    Description = "API que suma una serie de numeros pasados",
-                    TermsOfService = "#TengoSueño",
-                    License = new License
-                    {
-                        Name = "MIT",
-                        Url = "https://es.wikipedia.org/wiki/Licencia_MIT"
-                    },
-                    Contact = new Contact
-                    {
-                        Name = "Aarón García",
-                        Email = "aargarcia@domingoalonsogroup.com",
-                        Url = "github.com/Argarm"
-                    }
-                });
-                var basePath = PlatformServices.Default.Application.ApplicationBasePath;
-                var xmlPath = Path.Combine(basePath, Path.GetFileNameWithoutExtension(Assembly.GetEntryAssembly().Location)) + ".xml";
-                if (File.Exists(xmlPath))
-                {
-                    c.IncludeXmlComments(xmlPath);
-                }
-            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -120,35 +123,25 @@ namespace StringCalculatorAPI
 
             app.UseHealthChecks("/health", new HealthCheckOptions()
             {
-                ResponseWriter = WriteResponse
+                Predicate = _ => true,
+                ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 
             });
+
+
+            app.UseHealthChecksUI(config => config.UIPath = "/health-ui");
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1.0");
-                c.RoutePrefix = String.Empty;
+                c.SwaggerEndpoint("/swagger/v2/swagger.json", "v2.0");  
             });
-            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v2/swagger.json", "v2.0"); c.RoutePrefix=String.Empty;});
+            
             app.UseHttpsRedirection();
             app.UseMvc();
         }
 
-        private static Task WriteResponse(HttpContext httpContext, HealthReport result)
-        {
-            httpContext.Response.ContentType = "application/json";
-
-            var json = new JObject(
-                new JProperty("status", result.Status.ToString()),
-                new JProperty("results", new JObject(result.Entries.Select(pair =>
-                    new JProperty(pair.Key, new JObject(
-                        new JProperty("status", pair.Value.Status.ToString()),
-                        new JProperty("description", pair.Value.Description),
-                        new JProperty("data", new JObject(pair.Value.Data.Select(
-                            p => new JProperty(p.Key, p.Value))))))))));
-            return httpContext.Response.WriteAsync(
-                json.ToString(Formatting.Indented));
-        }
     }
+
 }

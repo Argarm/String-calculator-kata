@@ -164,6 +164,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
               "version": "[2.8.2, )"

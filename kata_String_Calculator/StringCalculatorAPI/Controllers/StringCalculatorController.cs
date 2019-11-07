@@ -7,15 +7,17 @@ using UseCases;
 namespace StringCalculatorAPI.Controllers
 {
     [Produces("application/json")]
-   
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     [ProducesResponseType(typeof(StringCalculatorDTO), (int)HttpStatusCode.OK)]
     [ProducesResponseType(typeof(BadRequestJSONegativesNotAllowed), (int)HttpStatusCode.BadRequest)]    
 
     public class StringCalculatorController : Controller
     {
-        [ApiVersion("1.0")]
-        [HttpPost, Route("api/v{version:apiVersion}/[controller]")]
+        [MapToApiVersion("1.0")]
+        [HttpPost]
         public ActionResult<StringCalculatorDTO> PostStringCalculator(StringCalculatorRequest modelo)
         {
             SaveAction action = new SaveAction(new StringCalculator());
@@ -26,19 +28,20 @@ namespace StringCalculatorAPI.Controllers
         }
 
 
-        [ApiVersion("2.0")]
+        [MapToApiVersion("2.0")]
         
-        [HttpPost, Route("api/v{version:apiVersion}/[controller]")]
-        public ActionResult<StringCalculatorDTO> PostStringCalculatorv2(StringCalculatorv2Request modelo)
+        [HttpPost]
+        public ActionResult<StringCalculatorDTOV2> PostStringCalculatorv2(StringCalculatorRequestV2 modelo)
         {
             SaveAction action = new SaveAction(new StringCalculator());
-            //StringCalculatorDTO resFirstSummand = action.ExecuteAPI(modelo.firstSummand);
-            StringCalculatorDTO resSecondSummand = action.ExecuteAPI(modelo.secondSummad);
-
-            //if (resFirstSummand == null) return BadRequest(new BadRequestJSONegativesNotAllowed());
-            if (resSecondSummand == null) return BadRequest(new BadRequestJSONegativesNotAllowed());
-            return resSecondSummand;
+            StringCalculatorDTO first = action.ExecuteAPI(modelo.firstSummand);
+            StringCalculatorDTO second = action.ExecuteAPI(modelo.secondSummand);
+            StringCalculatorDTOV2 result = new StringCalculatorDTOV2(){ FirstResult = first, SecondResult = second};
+            if (first == null || second == null) return BadRequest(new BadRequestJSONegativesNotAllowed());
+            return result;
         }
 
     }
+
+
 }

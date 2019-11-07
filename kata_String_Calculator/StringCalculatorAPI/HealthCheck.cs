@@ -14,17 +14,18 @@ namespace StringCalculatorAPI
             HealthCheckContext context,
             CancellationToken cancellationToken = default(CancellationToken))
         {
-            var healthCheckResultHealthy = true;
             string path = @"..\Log.txt";
-            var fs = new FileStream(path, FileMode.Open);
-            if (fs.CanWrite)
+            using (var fs = new FileStream(path, FileMode.Open))
             {
-                return Task.FromResult(
-                    HealthCheckResult.Healthy("File exist and you have permission to write on it."));
-            }
+                if (fs.CanWrite)
+                {
+                    return Task.FromResult(
+                        HealthCheckResult.Healthy("File exist and you have permission to write on it."));
+                }
 
-            return Task.FromResult(
-                HealthCheckResult.Unhealthy("File dont exist or you dont have permission to write on it."));
+                return Task.FromResult(
+                    HealthCheckResult.Unhealthy("File dont exist or you dont have permission to write on it."));
+            }
         }
 
     }
